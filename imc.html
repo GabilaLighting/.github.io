@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>IMC Calculator</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        let peso = parseFloat(window.prompt('Informe seu peso:'));
+        let altura = parseFloat(window.prompt('Informe sua altura:'));
+        let resut = (peso / (altura * altura)).toFixed(2);
+        document.write('<strong> Seu IMC é: ', resut, '</strong><br>')
+        if (resut <= 18.5){
+            document.write('Você está abaixo do peso!')
+        }
+
+
+    </script>
+</body>
+
+</html>
